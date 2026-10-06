@@ -61,6 +61,12 @@ td.g{background:var(--ok-soft)}td.y{background:var(--warn-soft)}td.r{background:
 .stat .val{font-size:24px;font-weight:700;line-height:1.2;margin:4px 0}
 .stat .val .from{color:var(--bad)}.stat .val .to{color:var(--ok)}
 .stat .sub{font-size:13px;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0}
+.gallery figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+.gallery a{display:block}
+.gallery img{width:100%;height:220px;object-fit:cover;display:block}
+.gallery figcaption{padding:9px 11px;margin:0;font-size:14px;color:var(--ink)}
+.gallery figcaption b{display:block;font-size:14.5px;margin-bottom:2px}
 /* calculator */
 .calc{border:2px solid var(--water);border-radius:12px;padding:16px;margin:18px 0;background:#fff}
 .calc h3{margin-top:0}
@@ -108,6 +114,7 @@ footer{color:var(--muted);font-size:14px;padding:26px 0 50px}
   body{font-size:16px}.hero h1{font-size:27px}nav.toc ol{columns:1}h2{font-size:22px}
 }
 @media print{
+  .gallery{grid-template-columns:repeat(3,1fr);gap:8px}.gallery img{height:150px}.gallery figcaption{font-size:9pt}.gallery figure{break-inside:avoid}
   @page{size:A4;margin:16mm 14mm}
   body{font-size:11pt;line-height:1.5}
   header.hero{background:#fff;color:var(--ink);padding:0 0 10px;border-bottom:3px solid var(--ink)}
@@ -171,6 +178,21 @@ footer{color:var(--muted);font-size:14px;padding:26px 0 50px}
     <li>It started in summer 2026, and nothing in your apartment changed.</li>
     <li>It gets better when you run your air conditioning hard and comes back when you switch it off or travel.</li>
   </ul>
+  <h3>What it looks like</h3>
+  <p>Real photos from affected City Walk apartments. Tap a photo to see it full size.</p>
+  <div class="gallery">
+    <figure><a href="images/ceiling-bubbling.jpg" target="_blank" rel="noopener"><img src="images/ceiling-bubbling.jpg" alt="Ceiling paint bubbling and bulging from water soaking through from above" loading="lazy"></a>
+      <figcaption><b>From the room</b>Paint bulging and bubbling on the ceiling. Water is soaking the board from above. Often the first thing you notice.</figcaption></figure>
+    <figure><a href="images/valve-wet-board.jpg" target="_blank" rel="noopener"><img src="images/valve-wet-board.jpg" alt="Chilled water gate valve with torn aluminium insulation above a rotting, stained ceiling board" loading="lazy"></a>
+      <figcaption><b>Under a chilled water valve</b>Water drips from the valve and pipe. The ceiling board below is stained, black with mould and starting to rot.</figcaption></figure>
+    <figure><a href="images/insulation-stained.jpg" target="_blank" rel="noopener"><img src="images/insulation-stained.jpg" alt="Aluminium-covered pipe insulation with yellow water stains and cracked joints" loading="lazy"></a>
+      <figcaption><b>Sweating pipe insulation</b>Yellow-brown water stains and cracked joints on the aluminium-covered insulation. A sign the pipes have been wet for weeks.</figcaption></figure>
+    <figure><a href="images/board-mould.jpg" target="_blank" rel="noopener"><img src="images/board-mould.jpg" alt="Top side of the false ceiling board covered in grey-green mould with rust on the metal frame" loading="lazy"></a>
+      <figcaption><b>Top of the ceiling board</b>Seen through the access hatch: grey-green mould across the board and rust on the metal frame.</figcaption></figure>
+    <figure><a href="images/void-mould.jpg" target="_blank" rel="noopener"><img src="images/void-mould.jpg" alt="Ceiling void with black mould spots on the concrete slab and around the pipe insulation" loading="lazy"></a>
+      <figcaption><b>Inside the void</b>Black mould spots on the concrete and around the pipe insulation, where humid air has been condensing.</figcaption></figure>
+  </div>
+  <p style="font-size:15px;color:var(--muted)">Take the same kind of photos in your apartment, with the date visible. They go with your complaint in section 6.</p>
   <div class="box info"><b>Renting?</b> Send the letters in section 6 yourself, because you live there. Ask your landlord to send the Owners Committee and RERA complaints (sections 8 and 9), because those are made in the owner's name.</div>
 </section>
 
