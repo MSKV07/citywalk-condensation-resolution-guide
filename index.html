@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dripping ceiling? A step-by-step guide for City Walk residents</title>
+<meta name="description" content="How City Walk residents can measure the fresh air supply, understand dewpoint, and get Dubai Holding Community Management to fix chilled water condensation — with ready-to-send letters.">
+<style>
+:root{
+  --ink:#16202a; --muted:#56616d; --line:#dde3e8; --bg:#ffffff; --panel:#f5f8fa;
+  --water:#1f6fb2; --water-soft:#e7f1fa; --bad:#b3261e; --bad-soft:#fdecea;
+  --ok:#1e7a46; --ok-soft:#e6f4ec; --warn:#a15c00; --warn-soft:#fff3e0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-text-size-adjust:100%}
+a{color:var(--water)}
+.wrap{max-width:780px;margin:0 auto;padding:0 18px}
+header.hero{background:#0f2a3f;color:#fff;padding:42px 0 34px}
+.hero .kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.8;margin:0 0 8px}
+.hero h1{font-size:34px;line-height:1.15;margin:0 0 14px}
+.hero p{margin:0 0 10px;font-size:18px;opacity:.95}
+.hero .ok-banner{margin-top:18px;background:rgba(255,255,255,.1);border-left:4px solid #6fd39a;padding:12px 14px;font-size:16px}
+nav.toc{background:var(--panel);border-bottom:1px solid var(--line);padding:14px 0}
+nav.toc ol{margin:0;padding-left:22px;columns:2;column-gap:28px;font-size:15px}
+nav.toc li{break-inside:avoid;margin:2px 0}
+section{padding:34px 0 8px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-size:26px;line-height:1.2;margin:0 0 6px;display:flex;gap:12px;align-items:baseline}
+h2 .n{flex:none;display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--water);color:#fff;font-size:17px}
+h3{font-size:19px;margin:26px 0 6px}
+.lead{color:var(--muted);margin-top:0}
+.box{border-radius:10px;padding:14px 16px;margin:16px 0}
+.box.info{background:var(--water-soft)}
+.box.ok{background:var(--ok-soft)}
+.box.bad{background:var(--bad-soft)}
+.box.warn{background:var(--warn-soft)}
+.box>:first-child{margin-top:0}.box>:last-child{margin-bottom:0}
+figure{margin:20px 0}
+figure svg{width:100%;height:auto;display:block}
+figcaption{font-size:14px;color:var(--muted);margin-top:6px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:14px 0}
+.steps>li{counter-increment:s;position:relative;padding:0 0 14px 44px}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:30px;height:30px;border-radius:50%;border:2px solid var(--water);color:var(--water);font-weight:700;display:grid;place-items:center;font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:14px 0}
+.card{border:1px solid var(--line);border-radius:10px;padding:14px}
+.card h4{margin:0 0 6px;font-size:16px}
+.card p{margin:0 0 8px;font-size:15px}
+.card .tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:20px;background:var(--water-soft);color:var(--water);margin-bottom:8px}
+.btnlink{display:inline-block;background:var(--water);color:#fff;text-decoration:none;padding:8px 12px;border-radius:8px;font-size:15px;font-weight:600}
+.btnlink.ghost{background:#fff;color:var(--water);border:1.5px solid var(--water)}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:10px 0}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--panel)}
+.tblwrap{overflow-x:auto}
+td.g{background:var(--ok-soft)}td.y{background:var(--warn-soft)}td.r{background:var(--bad-soft)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:14px 0}
+.stat{border:1px solid var(--line);border-radius:10px;padding:14px}
+.stat .lbl{font-size:13px;color:var(--muted)}
+.stat .val{font-size:24px;font-weight:700;line-height:1.2;margin:4px 0}
+.stat .val .from{color:var(--bad)}.stat .val .to{color:var(--ok)}
+.stat .sub{font-size:13px;color:var(--muted)}
+/* calculator */
+.calc{border:2px solid var(--water);border-radius:12px;padding:16px;margin:18px 0;background:#fff}
+.calc h3{margin-top:0}
+.calc .row{display:flex;gap:12px;flex-wrap:wrap}
+.calc label{flex:1 1 140px;font-size:14px;font-weight:600}
+.calc input,.calc select{width:100%;font:inherit;font-size:18px;padding:8px 10px;border:1.5px solid #9aa7b3;border-radius:8px;margin-top:4px}
+.calc .out{margin-top:14px;font-size:17px}
+.calc .dp{font-size:30px;font-weight:800}
+.verdict{margin-top:8px;padding:10px 12px;border-radius:8px;font-weight:600}
+.verdict.g{background:var(--ok-soft);color:var(--ok)}.verdict.y{background:var(--warn-soft);color:var(--warn)}.verdict.r{background:var(--bad-soft);color:var(--bad)}
+/* details form */
+.mydetails{background:var(--panel);border-radius:12px;padding:16px;margin:16px 0}
+.mydetails .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.mydetails label{font-size:13px;font-weight:600;color:var(--muted)}
+.mydetails input{width:100%;font:inherit;font-size:16px;padding:7px 9px;border:1.5px solid #b7c2cc;border-radius:7px;margin-top:3px;background:#fff}
+/* letters */
+.letter{border:1px solid var(--line);border-radius:12px;margin:16px 0;overflow:hidden}
+.letter .lh{background:var(--panel);padding:10px 14px;border-bottom:1px solid var(--line);font-size:14px}
+.letter .lh b{display:block;font-size:16px;color:var(--ink)}
+.letter .lh .meta{color:var(--muted)}
+.letter .lb{padding:14px 16px;white-space:pre-wrap;font-size:15.5px;line-height:1.6}
+.letter .la{display:flex;gap:8px;flex-wrap:wrap;padding:0 16px 14px}
+.letter button{font:inherit;font-size:15px;font-weight:600;padding:8px 12px;border-radius:8px;border:1.5px solid var(--water);background:#fff;color:var(--water);cursor:pointer}
+.letter .la a{font-size:15px}
+.f{background:#fff6c4;border-radius:3px;padding:0 2px}
+.f.filled{background:transparent;padding:0}
+.chars{font-size:13px;color:var(--muted);align-self:center}
+/* timeline */
+.tl{list-style:none;padding:0;margin:18px 0;position:relative}
+.tl::before{content:"";position:absolute;left:15px;top:6px;bottom:6px;width:3px;background:var(--line)}
+.tl li{position:relative;padding:0 0 18px 46px}
+.tl li .dot{position:absolute;left:5px;top:3px;width:23px;height:23px;border-radius:50%;background:#fff;border:3px solid var(--water)}
+.tl li.esc .dot{border-color:var(--bad)}
+.tl li.done .dot{border-color:var(--ok);background:var(--ok)}
+.tl .when{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.tl .what{font-weight:700}
+.units{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.units span{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:15px;background:#fff}
+.units span b{color:var(--water)}
+footer{color:var(--muted);font-size:14px;padding:26px 0 50px}
+.print-only{display:none}
+.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:#16202a;color:#fff;padding:9px 14px;border-radius:8px;font-size:15px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+@media (max-width:620px){
+  body{font-size:16px}.hero h1{font-size:27px}nav.toc ol{columns:1}h2{font-size:22px}
+}
+@media print{
+  @page{size:A4;margin:16mm 14mm}
+  body{font-size:11pt;line-height:1.5}
+  header.hero{background:#fff;color:var(--ink);padding:0 0 10px;border-bottom:3px solid var(--ink)}
+  .hero .ok-banner{background:var(--ok-soft);border-left-color:var(--ok)}
+  nav.toc{background:#fff}
+  .no-print,.letter .la,.calc,.mydetails,.toast{display:none!important}
+  .print-only{display:block}
+  section{break-inside:auto;padding-top:18px}
+  h2,h3{break-after:avoid}
+  figure,.letter,.box,.card,.stat,table,.tl li{break-inside:avoid}
+  .letter .lb{font-size:10.5pt}
+  .f{background:transparent;padding:0}
+  a{color:var(--ink)}
+  a.ext::after{content:" (" attr(href) ")";font-size:9pt;color:var(--muted);word-break:break-all}
+  .wrap{max-width:none;padding:0}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">City Walk, Dubai · Residents' guide · October 2026</p>
+    <h1>Water dripping from your ceiling? Here's how to get it fixed.</h1>
+    <p>Since summer 2026, chilled water pipes above ceilings in at least 11 apartments across 7 City Walk buildings have been "sweating". The water soaks the ceiling, and some homes now have mould.</p>
+    <p>This guide walks you through measuring the problem with a cheap gadget, understanding it, and sending the right letters in the right order until it's fixed. You don't need any technical background.</p>
+    <div class="ok-banner"><b>It works.</b> In Building 9 the building's fresh air supply was adjusted in early October 2026 after this process, and the condensation stopped.</div>
+  </div>
+</header>
+
+<nav class="toc no-print">
+  <div class="wrap">
+    <ol>
+      <li><a href="#check">Is this your problem?</a></li>
+      <li><a href="#why">Why it happens (dewpoint)</a></li>
+      <li><a href="#buy">Buy a meter</a></li>
+      <li><a href="#measure">Measure and record</a></li>
+      <li><a href="#details">Fill in your details</a></li>
+      <li><a href="#complain">Email Dubai Holding Community Management</a></li>
+      <li><a href="#wait">Wait, chase and handle the visit</a></li>
+      <li><a href="#oc">Escalate to the Owners Committee</a></li>
+      <li><a href="#rera">File with RERA on the website</a></li>
+      <li><a href="#dm">If you have mould: Dubai Municipality</a></li>
+      <li><a href="#meanwhile">What to do meanwhile</a></li>
+      <li><a href="#proof">Results and affected units</a></li>
+    </ol>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- 1 -->
+<section id="check">
+  <h2><span class="n">1</span>Is this your problem?</h2>
+  <p class="lead">You probably have it if two or more of these are true:</p>
+  <ul>
+    <li>Water drips from a ceiling, a light fitting or an access hatch, often worst early in the morning.</li>
+    <li>A brown or yellow stain, bubbling paint or soft plasterboard has appeared on the ceiling.</li>
+    <li>You can see droplets on the pipe insulation above the ceiling, or the insulation feels wet.</li>
+    <li>Dark spots or a musty smell (mould) near the stain.</li>
+    <li>It started in summer 2026, and nothing in your apartment changed.</li>
+    <li>It gets better when you run your air conditioning hard and comes back when you switch it off or travel.</li>
+  </ul>
+  <div class="box info"><b>Renting?</b> Send the letters in section 6 yourself, because you live there. Ask your landlord to send the Owners Committee and RERA complaints (sections 8 and 9), because those are made in the owner's name.</div>
+</section>
+
+<!-- 2 -->
+<section id="why">
+  <h2><span class="n">2</span>Why it happens, in plain words</h2>
+  <p>Above your ceiling, two pipes bring the building's chilled water, at about 5–7 °C, from the riser outside your apartment to your fan coil unit (your AC). They are wrapped in aluminium-covered insulation and carry green tags: <b>CHWS</b> (supply) and <b>CHWR</b> (return). The insulation keeps the outside surface at around <b>20–21 °C</b>. That is fine, as long as the air around the pipes is dry enough.</p>
+  <p>That air comes from the building. A duct marked <b>FA</b> (fresh air) releases treated fresh air straight into your ceiling void, not into your room. So the condition of that fresh air decides whether the pipes stay dry.</p>
+
+  <figure>
+    <svg viewBox="0 0 720 360" role="img" aria-labelledby="d1t d1d">
+      <title id="d1t">How water ends up on your ceiling</title>
+      <desc id="d1d">Cross-section of an apartment. Chilled water pipes with aluminium-clad insulation and green CHWS and CHWR tags come from the building riser outside the apartment, through the wall, to the fan coil unit above the ceiling. A fresh air duct marked FA releases the building's treated fresh air into the ceiling void, where the fan coil unit draws it in. When that air is too humid, water forms on the cold pipes and drips onto the ceiling, causing a stain and mould.</desc>
+      <rect x="0" y="0" width="720" height="30" fill="#c9ced3"/>
+      <text x="110" y="20" font-size="13" fill="#2a3540">Concrete slab</text>
+      <rect x="0" y="30" width="80" height="330" fill="#e9edf0"/>
+      <text x="6" y="54" font-size="11.5" fill="#56616d">Riser /</text>
+      <text x="6" y="68" font-size="11.5" fill="#56616d">corridor</text>
+      <rect x="96" y="30" width="624" height="200" fill="#f5f7f9"/>
+      <rect x="80" y="30" width="16" height="330" fill="#b8bec4"/>
+      <text x="110" y="50" font-size="15" font-weight="700" fill="#2a3540">Ceiling void</text>
+      <text x="110" y="66" font-size="12.5" fill="#56616d">this is where the building's fresh air arrives</text>
+      <text x="110" y="86" font-size="12.5" fill="#1f4f7a" font-weight="700">Chilled water pipes · aluminium-clad insulation</text>
+      <!-- CHWS pipe -->
+      <rect x="0" y="96" width="400" height="26" fill="#d3d8dd" stroke="#9aa3ab"/>
+      <rect x="0" y="99" width="400" height="5" fill="#eef1f3"/>
+      <rect x="130" y="101" width="66" height="16" rx="3" fill="#2e8b3e"/>
+      <text x="163" y="113" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">CHWS ▸</text>
+      <!-- CHWR pipe -->
+      <rect x="0" y="138" width="400" height="26" fill="#d3d8dd" stroke="#9aa3ab"/>
+      <rect x="0" y="141" width="400" height="5" fill="#eef1f3"/>
+      <rect x="130" y="143" width="66" height="16" rx="3" fill="#2e8b3e"/>
+      <text x="163" y="155" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">◂ CHWR</text>
+      <!-- droplets -->
+      <g fill="#1f6fb2">
+        <path d="M150 170 q5 10 0 14 q-5 -4 0 -14z"/><path d="M205 172 q5 10 0 14 q-5 -4 0 -14z"/>
+        <path d="M255 170 q5 10 0 14 q-5 -4 0 -14z"/><path d="M205 196 q5 10 0 14 q-5 -4 0 -14z"/>
+        <path d="M300 172 q5 10 0 14 q-5 -4 0 -14z"/><path d="M255 198 q5 10 0 14 q-5 -4 0 -14z"/>
+      </g>
+      <text x="318" y="194" font-size="12.5" fill="#b3261e" font-weight="700">water forms on the</text>
+      <text x="318" y="210" font-size="12.5" fill="#b3261e" font-weight="700">cold pipes, drips</text>
+      <!-- fan coil unit -->
+      <rect x="400" y="70" width="160" height="110" rx="6" fill="#e4e8ec" stroke="#8a949d"/>
+      <text x="480" y="116" font-size="14" font-weight="700" fill="#2a3540" text-anchor="middle">Fan coil unit</text>
+      <text x="480" y="134" font-size="12.5" fill="#56616d" text-anchor="middle">(your AC)</text>
+      <rect x="448" y="180" width="34" height="50" fill="#e4e8ec" stroke="#8a949d"/>
+      <!-- FA duct -->
+      <rect x="600" y="38" width="120" height="34" fill="#dfe7ee" stroke="#9aa7b3"/>
+      <rect x="648" y="45" width="34" height="20" rx="3" fill="#455a6b"/>
+      <text x="665" y="60" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">FA</text>
+      <g stroke="#1e7a46" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M598 56 q-14 8 -26 30"/><path d="M566 80 l5 8 l8 -4"/>
+      </g>
+      <text x="574" y="106" font-size="12.5" fill="#1e7a46" font-weight="700">FA duct releases</text>
+      <text x="574" y="122" font-size="12.5" fill="#1e7a46" font-weight="700">fresh air into the</text>
+      <text x="574" y="138" font-size="12.5" fill="#1e7a46" font-weight="700">void, not the room</text>
+      <text x="574" y="166" font-size="12" fill="#56616d">The fan coil draws</text>
+      <text x="574" y="181" font-size="12" fill="#56616d">void air in, cools it</text>
+      <text x="574" y="196" font-size="12" fill="#56616d">and blows it into</text>
+      <text x="574" y="211" font-size="12" fill="#56616d">the room</text>
+      <!-- ceiling -->
+      <rect x="96" y="230" width="624" height="14" fill="#e9e3d7"/>
+      <rect x="440" y="230" width="50" height="14" fill="#6b7782"/>
+      <ellipse cx="225" cy="247" rx="70" ry="8" fill="#b98b4e" opacity=".55"/>
+      <g fill="#3b3b3b"><circle cx="200" cy="249" r="2.4"/><circle cx="217" cy="252" r="1.8"/><circle cx="241" cy="248" r="2.2"/><circle cx="257" cy="252" r="1.6"/></g>
+      <text x="155" y="276" font-size="12.5" fill="#7a4b12" font-weight="700">stain, bubbling paint, mould</text>
+      <text x="110" y="226" font-size="12" fill="#56616d">False ceiling</text>
+      <!-- room -->
+      <g stroke="#1f6fb2" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M465 248 v34"/><path d="M458 276 l7 8 l7 -8"/>
+        <path d="M448 248 q-14 22 -30 30"/><path d="M482 248 q14 22 30 30"/>
+      </g>
+      <text x="530" y="276" font-size="12.5" fill="#1f6fb2" font-weight="700">cool air from your AC</text>
+      <text x="110" y="336" font-size="15" font-weight="700" fill="#2a3540">Your room</text>
+    </svg>
+    <figcaption>Chilled water comes from the building's riser outside your apartment, through the wall, to your fan coil unit above the ceiling. The duct marked FA releases the building's treated fresh air into the ceiling void, where the fan coil unit picks it up. If that fresh air is too humid, the whole void fills with humid air and the cold pipes sweat.</figcaption>
+  </figure>
+
+  <h3>What is "dewpoint"?</h3>
+  <p>Air always carries some invisible water vapour. The <b>dewpoint</b> is the temperature at which that vapour turns back into liquid water. Think of a cold can from the fridge on a humid day: it gets wet because its surface is colder than the air's dewpoint.</p>
+  <p>The rule that matters for you is simple:</p>
+  <div class="box bad"><b>If the pipe's surface is colder than the dewpoint of the air around it, water forms on the pipe. Always.</b> Better insulation, a new ceiling or a repaint won't help if the air stays this wet.</div>
+
+  <h3>Why the void temperature alone tells you nothing</h3>
+  <p>Temperature and dewpoint are different things. Two voids can both be at 26 °C, but:</p>
+  <ul>
+    <li>at 50% humidity the dewpoint is about <b>15 °C</b>. That is well below the 20 °C pipe surface, so the pipe stays dry;</li>
+    <li>at 75% humidity the dewpoint is about <b>21 °C</b>. That is above the pipe surface, so the pipe drips.</li>
+  </ul>
+  <p>Same temperature, opposite result. That's why a technician who only checks temperature, or tells you the fresh air "is supplied at 22–23 °C, which is sufficient", has not checked the thing that actually causes the water. You need temperature <b>and</b> humidity, and from those the dewpoint.</p>
+
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-labelledby="d2t d2d">
+      <title id="d2t">Dewpoint versus pipe surface, before and after the fix in Building 9</title>
+      <desc id="d2d">Two temperature scales from 10 to 30 degrees. Before the fix the void air dewpoint was about 21 degrees, above the 20 degree pipe surface, so water formed. After the fix the void dewpoint was about 14.5 degrees, about 5.5 degrees below the pipe surface, so the pipe stayed dry.</desc>
+      <g font-size="13" fill="#56616d">
+        <text x="140" y="234" text-anchor="middle">10 °C</text><text x="280" y="234" text-anchor="middle">15 °C</text><text x="420" y="234" text-anchor="middle">20 °C</text><text x="560" y="234" text-anchor="middle">25 °C</text><text x="694" y="234" text-anchor="middle">30 °C</text>
+      </g>
+      <!-- axis x: 10C at 140, 30C at 700 => 28 px per degree -->
+      <!-- row 1 before -->
+      <text x="0" y="62" font-size="15" font-weight="700" fill="#b3261e">Before</text>
+      <text x="0" y="80" font-size="12.5" fill="#56616d">September</text>
+      <rect x="140" y="50" width="560" height="26" rx="4" fill="#f3f6f8"/>
+      <rect x="420" y="50" width="28" height="26" fill="#fdecea"/>
+      <line x1="420" y1="40" x2="420" y2="86" stroke="#1f6fb2" stroke-width="3"/>
+      <text x="356" y="36" font-size="12.5" fill="#1f6fb2" font-weight="700">pipe surface 20 °C</text>
+      <circle cx="448" cy="63" r="8" fill="#b3261e"/>
+      <text x="460" y="100" font-size="12.5" fill="#b3261e" font-weight="700">dewpoint ≈ 21 °C → water forms</text>
+      <circle cx="644" cy="63" r="6" fill="#6b7782"/>
+      <text x="644" y="40" font-size="12" fill="#56616d" text-anchor="middle">void 28 °C</text>
+      <!-- row 2 after -->
+      <text x="0" y="152" font-size="15" font-weight="700" fill="#1e7a46">After</text>
+      <text x="0" y="170" font-size="12.5" fill="#56616d">October</text>
+      <rect x="140" y="140" width="560" height="26" rx="4" fill="#f3f6f8"/>
+      <rect x="266" y="140" width="154" height="26" fill="#e6f4ec"/>
+      <line x1="420" y1="130" x2="420" y2="176" stroke="#1f6fb2" stroke-width="3"/>
+      <circle cx="266" cy="153" r="8" fill="#1e7a46"/>
+      <text x="200" y="192" font-size="12.5" fill="#1e7a46" font-weight="700">dewpoint ≈ 14.5 °C</text>
+      <text x="343" y="132" font-size="12.5" fill="#1e7a46" font-weight="700" text-anchor="middle">5.5 °C margin → dry</text>
+      <circle cx="560" cy="153" r="6" fill="#6b7782"/>
+      <text x="530" y="192" font-size="12" fill="#56616d">void ≈ 25 °C</text>
+      <line x1="140" y1="214" x2="700" y2="214" stroke="#9aa7b3"/>
+      <g stroke="#9aa7b3"><line x1="140" y1="210" x2="140" y2="218"/><line x1="280" y1="210" x2="280" y2="218"/><line x1="420" y1="210" x2="420" y2="218"/><line x1="560" y1="210" x2="560" y2="218"/><line x1="700" y1="210" x2="700" y2="218"/></g>
+    </svg>
+    <figcaption>What matters is where the dewpoint sits relative to the pipe surface, not how warm the void is. Aim for the dewpoint to be at least 3 °C below the pipe surface.</figcaption>
+  </figure>
+</section>
+
+<!-- 3 -->
+<section id="buy">
+  <h2><span class="n">3</span>Buy a meter (10 minutes to set up)</h2>
+  <p class="lead">You need something that measures temperature and humidity. A meter that also shows the dewpoint saves you a step. Any of these will do.</p>
+  <div class="cards">
+    <div class="card">
+      <span class="tag">Easiest · shows dewpoint</span>
+      <h4>Handheld meter with a "DP" button</h4>
+      <p>The same type of tool the management company's engineer used. Switch it on, press the DP button, read the dewpoint.</p>
+      <p><a class="ext" href="https://www.amazon.ae/VLIKE-Temperature-Hygrometer-Thermometer-Agriculture/dp/B01NBI87QV" target="_blank" rel="noopener">VLIKE handheld meter with dew point on Amazon.ae</a><br>
+      <a class="ext" href="https://www.amazon.ae/dew-point-meter/s?k=dew+point+meter" target="_blank" rel="noopener">More "dew point meter" options on Amazon.ae</a></p>
+    </div>
+    <div class="card">
+      <span class="tag">Leave it in the ceiling · phone app</span>
+      <h4>Small Bluetooth sensor</h4>
+      <p>Put it inside the ceiling void through a hatch and watch the readings and history on your phone. The app shows the dewpoint.</p>
+      <p><a class="ext" href="https://www.amazon.ae/SwitchBot-Thermometer-Hygrometer-Bluetooth-Temperature/dp/B09QBR7XJD" target="_blank" rel="noopener">SwitchBot Thermometer Hygrometer on Amazon.ae</a></p>
+    </div>
+    <div class="card">
+      <span class="tag">Already have one?</span>
+      <h4>Any thermometer-hygrometer</h4>
+      <p>If it shows temperature and humidity, that's enough. Type both numbers into the calculator in section 4.</p>
+      <p><a class="ext" href="https://www.amazon.ae/Govee-Hygrometer-Thermometer-Bluetooth-Control/dp/B08746Z6X3" target="_blank" rel="noopener">Example: Govee H5075 on Amazon.ae</a></p>
+    </div>
+  </div>
+  <p style="font-size:15px;color:var(--muted)">Cheap meters are accurate to about ±0.5 °C and ±3% humidity. That's good enough here, because the problem shows up as a difference of several degrees.</p>
+</section>
+
+<!-- 4 -->
+<section id="measure">
+  <h2><span class="n">4</span>Measure and record</h2>
+  <h3>A. The fresh air arriving in your ceiling void</h3>
+  <ol class="steps">
+    <li><b>Open the ceiling access hatch</b> nearest your AC unit and find the <b>duct marked FA</b>. Its open end blows the building's fresh air into the void.</li>
+    <li><b>Switch your AC off for 15 minutes,</b> so your fan coil unit doesn't disturb the reading. The FA duct keeps blowing either way.</li>
+    <li><b>Hold the meter 5–10 cm from the FA duct outlet,</b> in the airflow, for 3–5 minutes until the numbers stop changing. Don't touch the sensor tip and don't breathe on it.</li>
+    <li><b>Take a photo</b> showing the meter's screen with the FA duct behind it. Your phone records the date and time.</li>
+    <li><b>Write down</b> the temperature, humidity and dewpoint, plus the date and time. If you can, repeat early in the morning (around 7 am), when it's usually worst.</li>
+  </ol>
+  <div class="box info"><b>No access hatch?</b> Then you can't reach the FA duct yourself. Skip this measurement, photograph the water damage, and ask the management company to measure the fresh air at the FA duct in your void. It's their system, and their engineers have the instruments. In Letter 1, delete the "What I measured" paragraph.</div>
+  <h3>B. The ceiling void (if you have an access hatch)</h3>
+  <ol class="steps">
+    <li>Open the hatch and use your phone torch to look at the pipe insulation. Photograph any droplets, wet patches or stains.</li>
+    <li>Place the meter or sensor inside the void, lying on the ceiling board away from the hatch opening, and close the hatch. Leave it for at least 30 minutes, or overnight if it's an app sensor.</li>
+    <li>Read the temperature, humidity and dewpoint. Note whether your air conditioning was on or off.</li>
+  </ol>
+
+  <div class="calc no-print" id="calc">
+    <h3>Dewpoint calculator</h3>
+    <div class="row">
+      <label>Temperature (°C)<input id="cT" type="number" inputmode="decimal" step="0.1" value="23.4"></label>
+      <label>Humidity (%)<input id="cH" type="number" inputmode="decimal" step="0.1" value="65"></label>
+      <label>Where did you measure?
+        <select id="cW"><option value="fa">Fresh air (FA duct outlet)</option><option value="void">Ceiling void</option></select>
+      </label>
+    </div>
+    <div class="out">Dewpoint: <span class="dp" id="cDP">–</span></div>
+    <div class="verdict" id="cV"></div>
+  </div>
+
+  <h3>How to read your numbers</h3>
+  <div class="tblwrap">
+  <table>
+    <tr><th>Dewpoint measured at…</th><th>Good</th><th>Watch</th><th>Problem</th></tr>
+    <tr><td><b>Fresh air (FA duct outlet)</b></td><td class="g">13 °C or lower</td><td class="y">13–15 °C</td><td class="r">above 15 °C</td></tr>
+    <tr><td><b>Ceiling void</b></td><td class="g">17 °C or lower</td><td class="y">17–20 °C</td><td class="r">20 °C or higher: the pipe will drip</td></tr>
+  </table>
+  </div>
+  <p style="font-size:15px;color:var(--muted)">For reference, Building 9's fresh air at the FA duct measured 23.4 °C at 65% (dewpoint 16.5 °C) when it was dripping, and 19.5–20.4 °C at 50–55% (dewpoint about 9–11 °C) after the fix. A dewpoint of 13 °C is roughly what you get in a room at 24 °C and 50% humidity, the indoor condition Dubai's Green Building Regulations design for.</p>
+
+  <div class="print-only">
+    <h3>Dewpoint look-up table (°C)</h3>
+    <p style="font-size:10pt;color:var(--muted)">Find your temperature (row) and humidity (column).</p>
+    <div id="dpTable"></div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section id="details">
+  <h2><span class="n">5</span>Fill in your details once</h2>
+  <p class="lead no-print">Type your details here, and every letter below fills itself in. Nothing is sent anywhere; it stays in your browser.</p>
+  <p class="print-only">In the letters below, replace every <b>[highlighted field]</b> with your own details.</p>
+  <div class="mydetails no-print">
+    <div class="grid">
+      <label>Your name<input data-k="name" placeholder="e.g. Sara Ahmed"></label>
+      <label>Building<input data-k="bldg" placeholder="e.g. 12"></label>
+      <label>Unit<input data-k="unit" placeholder="e.g. 106"></label>
+      <label>Phone<input data-k="phone" placeholder="+971 …"></label>
+      <label>Problem started (month)<input data-k="since" placeholder="e.g. July"></label>
+      <label>Measured on (date)<input data-k="mdate" placeholder="e.g. 6 October"></label>
+      <label>Measured at (time)<input data-k="mtime" placeholder="e.g. 7:15 am"></label>
+      <label>Fresh air temperature °C<input data-k="t" inputmode="decimal" placeholder="e.g. 23.4"></label>
+      <label>Fresh air humidity %<input data-k="rh" inputmode="decimal" placeholder="e.g. 65"></label>
+      <label>Fresh air dewpoint °C<input data-k="dp" inputmode="decimal" placeholder="auto from the two above"></label>
+      <label>Your complaint number<input data-k="ticket" placeholder="after step 6"></label>
+      <label>Date of your first email<input data-k="sent" placeholder="e.g. 7 October"></label>
+    </div>
+    <p style="margin:10px 0 0"><button type="button" id="clearDetails" style="font:inherit;font-size:14px;padding:6px 10px;border-radius:7px;border:1px solid #9aa7b3;background:#fff;cursor:pointer">Clear my details</button></p>
+  </div>
+</section>
+
+<!-- 6 -->
+<section id="complain">
+  <h2><span class="n">6</span>Email Dubai Holding Community Management</h2>
+  <p class="lead">This is the formal start. Everything after it depends on having this in writing.</p>
+  <ol class="steps">
+    <li>Attach your photos: the meter at the FA duct, any droplets on the pipes, the ceiling stain or mould.</li>
+    <li>Send the letter below to <b>support@dubaiholdingcm.ae</b>. On a phone, the "Open in my email app" button fills everything in for you.</li>
+    <li>Ask for a complaint number in writing. If you also call them on <a href="tel:8003822426">800 382 2426</a>, still send the email; a phone call leaves no record.</li>
+  </ol>
+  <div class="letter" data-to="support@dubaiholdingcm.ae">
+    <div class="lh"><b>Letter 1 · First complaint</b><span class="meta">To: support@dubaiholdingcm.ae</span><br><span class="meta">Subject: </span><span class="subj">Chilled water condensation and water leaking from ceiling – Unit <span class="f" data-f="unit">[unit]</span>, Building <span class="f" data-f="bldg">[building]</span>, City Walk (same issue as complaints 00884930 / 00895269)</span></div>
+<div class="lb">Dear Dubai Holding Community Management team,
+
+I am reporting chilled water condensation and water coming through the ceiling of my apartment, Unit <span class="f" data-f="unit">[unit]</span>, Building <span class="f" data-f="bldg">[building]</span>, City Walk. Please send me a complaint number by return.
+
+What is happening
+Since <span class="f" data-f="since">[month]</span> 2026 the chilled water pipes in the ceiling void above my apartment have been sweating, and water is dripping onto the ceiling. Nothing in my apartment has changed: no work on the pipes, insulation or ceiling, and no change in how the apartment is used.
+
+What I measured
+On <span class="f" data-f="mdate">[date]</span> at <span class="f" data-f="mtime">[time]</span>, with my air conditioning switched off, the treated fresh air coming out of the fresh air (FA) duct in my ceiling void measured <span class="f" data-f="t">[temperature]</span> °C and <span class="f" data-f="rh">[humidity]</span> % relative humidity, a dewpoint of about <span class="f" data-f="dp">[dewpoint]</span> °C. Photos are attached.
+
+This is a known, building-wide issue
+At least 11 apartments across 7 City Walk buildings (6B, 9, 10, 12, 16, 19 and 21A) have reported the same problem since this summer, recorded under complaints 00884930 and 00895269 (Unit 409, Building 9). In Building 9 the condensation stopped in early October 2026, after the treated fresh air supply was adjusted to about 20 °C and 50–55 % humidity.
+
+What I am asking for
+1. A complaint number by return.
+2. A measurement of the treated fresh air at the FA duct in my ceiling void with calibrated instruments, recording temperature, humidity and dewpoint.
+3. Adjustment of the fresh air supply serving my building to the condition achieved for Building 9, confirmed by a second measurement.
+4. Please do not close the complaint until the result has been measured and confirmed to me in writing.
+
+I would appreciate a written response within 14 days, consistent with Article 24 of Law No. 6 of 2019. I am also informing the Owners Committee.
+
+Regards,
+<span class="f" data-f="name">[your name]</span>
+Unit <span class="f" data-f="unit">[unit]</span>, Building <span class="f" data-f="bldg">[building]</span>, City Walk
+<span class="f" data-f="phone">[phone]</span></div>
+    <div class="la"><button type="button" class="copy">Copy letter</button><a class="btnlink mail" href="#">Open in my email app</a></div>
+  </div>
+</section>
+
+<!-- 7 -->
+<section id="wait">
+  <h2><span class="n">7</span>Wait, chase, and handle the visit</h2>
+  <ul class="tl">
+    <li class="done"><span class="dot"></span><div class="when">Day 0</div><div class="what">Measure and send Letter 1</div>Keep the sent email; it is your proof of notice.</li>
+    <li><span class="dot"></span><div class="when">After 2 working days</div><div class="what">No complaint number? Send Letter 2</div>Management companies are expected to reply to written complaints within two working days.</li>
+    <li><span class="dot"></span><div class="when">When a technician comes</div><div class="what">Insist on a real measurement, then send Letter 3</div>Write down what was measured and said, and confirm it by email the same day.</li>
+    <li class="esc"><span class="dot"></span><div class="when">Closed without a fix, or no reply</div><div class="what">Send Letter 4 (objection) and go to sections 8 and 9</div>A complaint closed as "resolved" while water still drips is the strongest evidence you will get.</li>
+    <li class="esc"><span class="dot"></span><div class="when">Day 14</div><div class="what">Not fixed? Owners Committee and RERA</div>Do both in parallel. If there's mould, add Dubai Municipality.</li>
+  </ul>
+
+  <div class="box warn">
+    <p><b>When the technician visits, make sure that:</b></p>
+    <ul>
+      <li>your air conditioning has been <b>off for a few hours</b> before the visit, ideally overnight. With it running, the condensation hides and they'll report "no active condensation";</li>
+      <li>they measure <b>temperature and humidity</b> at the FA duct outlet in your void, not just look into the ceiling;</li>
+      <li>you get their name, the readings and the next step, with a date.</li>
+    </ul>
+    <p><b>Don't accept</b> "just run your air conditioning at 24–25 °C". It doesn't fix the cause, it moves the building's running costs onto you, and it fails the moment you travel.</p>
+  </div>
+
+  <div class="letter">
+    <div class="lh"><b>Letter 2 · Chaser (no complaint number after 2 working days)</b><span class="meta">Reply to your own Letter 1 email, so the history stays in one thread.</span></div>
+<div class="lb">Dear Dubai Holding Community Management team,
+
+I wrote on <span class="f" data-f="sent">[date of first email]</span> about chilled water condensation and water coming through the ceiling of Unit <span class="f" data-f="unit">[unit]</span>, Building <span class="f" data-f="bldg">[building]</span>, City Walk. I have not yet received a complaint number or a response.
+
+Please send me the complaint number today. Water is still coming through the ceiling and the damage is getting worse.
+
+Regards,
+<span class="f" data-f="name">[your name]</span> · Unit <span class="f" data-f="unit">[unit]</span>, Building <span class="f" data-f="bldg">[building]</span> · <span class="f" data-f="phone">[phone]</span></div>
+    <div class="la"><button type="button" class="copy">Copy letter</button></div>
+  </div>
+
+  <div class="letter">
+    <div class="lh"><b>Letter 3 · Record of the technician's visit (send the same day)</b><span class="meta">Reply in the same thread. Edit the bracketed parts to match what actually happened.</span></div>
+<div class="lb">Dear Dubai Holding Community Management team,
+
+Complaint <span class="f" data-f="ticket">[complaint number]</span> – Unit <span class="f" data-f="unit">[unit]</span>, Building <span class="f" data-f="bldg">[building]</span>, City Walk
+
+I am recording what happened at today's visit, so that it forms part of the file.
+
+– Attended by: [name / company], at [time].
+– Measurements taken: [none / temperature and humidity at the FA duct: __ °C and __ %].
+– What was observed: [e.g. droplets on the pipe insulation, wet ceiling board].
+– What I was told: [e.g. "the supply will be adjusted and we will come back on __"].
+
+Please confirm this record is accurate, and tell me the date of the corrective work and of the follow-up measurement. Please keep the complaint open until the result has been measured and confirmed to me in writing.
+
+Regards,
+<span class="f" data-f="name">[your name]</span> · <span class="f" data-f="phone">[phone]</span></div>
+    <div class="la"><button type="button" class="copy">Copy letter</button></div>
+  </div>
+
+  <div class="letter">
+    <div class="lh"><b>Letter 4 · Objection (complaint closed but not fixed)</b><span class="meta">Reply in the same thread.</span></div>
+<div class="lb">Dear Dubai Holding Community Management team,
+
+I object to the closure of complaint <span class="f" data-f="ticket">[complaint number]</span> (Unit <span class="f" data-f="unit">[unit]</span>, Building <span class="f" data-f="bldg">[building]</span>, City Walk). The problem is not resolved, and no result was measured or confirmed to me before closure. Please reopen it today.
+
+As of [today's date], the fresh air at the FA duct in my ceiling void still measures [__] °C and [__] % humidity, and water is still coming through the ceiling. Photos are attached.
+
+Please give me a date for the corrective work and for a follow-up measurement with calibrated instruments. I am sharing this with the Owners Committee and will file a complaint with RERA if the matter is not addressed.
+
+Regards,
+<span class="f" data-f="name">[your name]</span> · <span class="f" data-f="phone">[phone]</span></div>
+    <div class="la"><button type="button" class="copy">Copy letter</button></div>
+  </div>
+</section>
+
+<!-- 8 -->
+<section id="oc">
+  <h2><span class="n">8</span>Escalate to the Owners Committee</h2>
+  <p class="lead">The Owners Committee represents all owners. It can demand records an individual owner can't, and it can take the matter to RERA collectively.</p>
+  <ol class="steps">
+    <li>The Committee has no shared email address. Write to <b>Hani Raad</b>, a Committee member who is already familiar with this issue, and ask him to bring it to the Committee: <a href="mailto:haniraad@gmail.com">haniraad@gmail.com</a>.</li>
+    <li>Attach your Letter 1 and any replies, so he has the whole history.</li>
+  </ol>
+  <div class="letter" data-to="haniraad@gmail.com">
+    <div class="lh"><b>Letter 5 · To the Owners Committee, through Hani Raad</b><span class="meta">To: haniraad@gmail.com</span><br><span class="meta">Subject: </span><span class="subj">Chilled water condensation – Unit <span class="f" data-f="unit">[unit]</span>, Building <span class="f" data-f="bldg">[building]</span>, City Walk – please raise with the Owners Committee</span></div>
+<div class="lb">Dear Hani,
+
+I understand you are on the Owners Committee and already familiar with the chilled water condensation problem in City Walk. My apartment, Unit <span class="f" data-f="unit">[unit]</span>, Building <span class="f" data-f="bldg">[building]</span>, is affected too, and I would be grateful if you could bring my case to the Committee's attention.
+
+Chilled water pipes in my ceiling void are condensing and water is coming through the ceiling. At least 11 apartments across 7 buildings (6B, 9, 10, 12, 16, 19 and 21A) have reported the same since this summer. The fresh air supplied to my ceiling void measured <span class="f" data-f="t">[temperature]</span> °C and <span class="f" data-f="rh">[humidity]</span> % humidity (dewpoint about <span class="f" data-f="dp">[dewpoint]</span> °C) on <span class="f" data-f="mdate">[date]</span>. In Building 9 the problem stopped in early October 2026 once the fresh air supply was adjusted to about 20 °C and 50–55 % humidity.
+
+I wrote to Dubai Holding Community Management on <span class="f" data-f="sent">[date]</span> (complaint <span class="f" data-f="ticket">[number]</span>). [It has not been resolved / it was closed without a fix.] My email and their replies are attached.
+
+Could you please ask the Committee to:
+1. Request that the fresh air adjustment made for Building 9 be applied to all affected buildings, and verified by measurement.
+2. Request the commissioning and maintenance records for the fresh air and chilled water systems.
+3. If the matter is not addressed within 14 days, refer it to RERA under Article 24 of Law No. 6 of 2019.
+
+Thank you for your help.
+
+Regards,
+<span class="f" data-f="name">[your name]</span> · Unit <span class="f" data-f="unit">[unit]</span>, Building <span class="f" data-f="bldg">[building]</span> · <span class="f" data-f="phone">[phone]</span></div>
+    <div class="la"><button type="button" class="copy">Copy letter</button><a class="btnlink mail" href="#">Open in my email app</a></div>
+  </div>
+</section>
+
+<!-- 9 -->
+<section id="rera">
+  <h2><span class="n">9</span>File with RERA on the website</h2>
+  <p class="lead">RERA (the Real Estate Regulatory Agency, part of the Dubai Land Department) supervises management companies. Owners can file directly once the management company has been told in writing and has not replied properly within two working days.</p>
+  <div class="box info"><b>Before you start, have ready:</b> your UAE PASS login on your phone; your sent Letter 1 and any replies, saved as PDF; your photos; and a list of affected units (below). You can upload up to <b>10 files</b>, each <b>under 2 MB</b>, as .jpg, .png or .pdf. Phone photos are often bigger than 2 MB, so shrink them or combine several into one PDF.</div>
+  <ol class="steps">
+    <li>Go to <a class="ext" href="https://dubailand.gov.ae/en/" target="_blank" rel="noopener">dubailand.gov.ae</a> and click <b>My DLD</b> at the top right. Log in with <b>UAE PASS</b>.</li>
+    <li>Open <b>My Portfolio</b>, then <b>Owners Services (JOP)</b>, and choose your unit.</li>
+    <li>Choose <b>Complaints</b>.</li>
+    <li>Category: <b>Management Performance</b>.<br>Sub category: <b>Deterioration in the level of services provided in the property</b>.</li>
+    <li>Paste the text below into <b>Description</b>. The box takes at most <b>2,000 characters</b>; the counter under the text shows the length.</li>
+    <li>Attach your files under <b>Attached Documents</b> and submit. <b>Save the reference number</b>, and email it to the Owners Committee.</li>
+  </ol>
+  <div class="letter">
+    <div class="lh"><b>Letter 6 · RERA complaint text</b><span class="meta">Edit the bracketed lines to match your own timeline. Delete lines that don't apply.</span></div>
+<div class="lb" id="reraText">Complaint against Dubai Holding Community Management, management company of City Walk.
+
+I own Unit <span class="f" data-f="unit">[unit]</span>, Building <span class="f" data-f="bldg">[building]</span>, City Walk. The management company has not remedied a defect in common property causing water damage in my apartment and at least 10 others across 7 buildings.
+
+Defect: condensation from the building's chilled water pipes in ceiling voids, caused by overly humid treated fresh air supplied by the building since this summer. Water is coming through my ceiling. [Mould is growing.]
+
+Measured on <span class="f" data-f="mdate">[date]</span>: fresh air at the FA duct in my ceiling void <span class="f" data-f="t">[temperature]</span> C, <span class="f" data-f="rh">[humidity]</span>% humidity, dewpoint <span class="f" data-f="dp">[dewpoint]</span> C.
+
+Timeline:
+<span class="f" data-f="sent">[date]</span>: written complaint to the management company (complaint <span class="f" data-f="ticket">[number]</span>).
+[date]: [no reply / technician visit without measurement / closed as resolved without a fix].
+[today's date]: not resolved.
+
+The same defect was confirmed in Building 9 (complaints 00884930 and 00895269) and stopped in October 2026 after the fresh air supply was adjusted to about 20 C and 50-55% humidity. The management company knows the cause and the fix but has not applied it to my building.
+
+Requested: direct the company to adjust the fresh air supply serving my building, verify the result by measurement, and inspect all reported units.</div>
+    <div class="la"><button type="button" class="copy">Copy text</button><span class="chars" id="reraChars"></span></div>
+  </div>
+  <p>Attach your affected-units list as a simple one-page document. Use the units in <a href="#proof">section 12</a>, unit numbers only, no names.</p>
+</section>
+
+<!-- 10 -->
+<section id="dm">
+  <h2><span class="n">10</span>If you have mould: Dubai Municipality</h2>
+  <p>Mould from water ingress is a health issue, and that falls under Dubai Municipality. A Municipality inspector's report carries weight with RERA too.</p>
+  <ol class="steps">
+    <li><b>Photograph the mould</b> with dates, close-up and wide, once a week. Growth over time is strong evidence.</li>
+    <li><b>Report it</b> by calling <a href="tel:800900">800 900</a> or through <a class="ext" href="https://www.dm.gov.ae/contact/" target="_blank" rel="noopener">dm.gov.ae/contact</a>. Say: "mould and water ingress from the building's chilled water and fresh air systems in a residential apartment; I am requesting an inspection." Give your complaint number.</li>
+    <li><b>Add the Municipality reference</b> to your RERA complaint.</li>
+  </ol>
+  <div class="box warn">If you can, leave the mould in place until someone has inspected it, so there is no dispute about what was there. But if it's in a bedroom or anyone in your home has breathing problems, put health first: photograph it, then have it cleaned.</div>
+</section>
+
+<!-- 11 -->
+<section id="meanwhile">
+  <h2><span class="n">11</span>What to do while you wait</h2>
+  <ul>
+    <li><b>Run your air conditioning cooler and slower:</b> 20–22 °C with the fan on <b>low</b>. A colder coil and slower air pull more water out of the air. 24–25 °C on high mostly cools without drying.</li>
+    <li><b>A small dehumidifier</b> in the worst room, set to 50%, helps a lot and costs far less to run than the air conditioning.</li>
+    <li>Put a tray or towel under any drip and check it daily. Keep photos.</li>
+    <li>Don't pay for new insulation or ceiling repairs yet. Insulation that worked for years isn't the cause, and repairs will get wet again until the air is fixed.</li>
+    <li>Keep your electricity bills. If you've been running the air conditioning extra to stop drips, that cost may matter later.</li>
+  </ul>
+</section>
+
+<!-- 12 -->
+<section id="proof">
+  <h2><span class="n">12</span>Results so far and affected units</h2>
+  <h3>Building 9: before and after</h3>
+  <div class="stats">
+    <div class="stat"><div class="lbl">Fresh air at the FA duct</div><div class="val"><span class="from">23.4 °C · 65%</span> → <span class="to">≈20 °C · 50–55%</span></div><div class="sub">18 September → early October 2026</div></div>
+    <div class="stat"><div class="lbl">Fresh air dewpoint</div><div class="val"><span class="from">16.5 °C</span> → <span class="to">9–11 °C</span></div><div class="sub">lower is drier</div></div>
+    <div class="stat"><div class="lbl">Ceiling void dewpoint</div><div class="val"><span class="from">20–22 °C</span> → <span class="to">14–15 °C</span></div><div class="sub">pipe surface ≈ 20 °C: dry again</div></div>
+  </div>
+  <p>How it got there: written complaint (5 September); a technician visit with no measurement (8 September); a management engineer measured the supply and ordered a correction (18 September); the complaint was closed as "resolved" without a fix (20 September); objection and a new complaint (22 September); filings with the Owners Committee, RERA and Dubai Municipality; supply adjusted (early October).</p>
+
+  <h3>Units that have reported the same problem</h3>
+  <div class="units">
+    <span>Bldg <b>6B</b> · 306</span><span>Bldg <b>9</b> · 409 <i style="color:var(--ok)">fixed</i></span><span>Bldg <b>10</b> · 304</span><span>Bldg <b>10</b> · 503</span>
+    <span>Bldg <b>12</b> · 106</span><span>Bldg <b>16</b> · 205</span><span>Bldg <b>16</b> · 401</span><span>Bldg <b>19</b> · 413</span>
+    <span>Bldg <b>19</b> · 414</span><span>Bldg <b>19</b> · one more unit</span><span>Bldg <b>21A</b> · 401</span>
+  </div>
+  <p style="font-size:15px;color:var(--muted)">Mention these in your letters as shown. Complaints from several units about one building system are much harder to ignore than one. If you file, tell the residents' group, so the list stays current.</p>
+
+  <h3>Useful links</h3>
+  <ul>
+    <li><a class="ext" href="https://dubailand.gov.ae/en/news-media/dld-updates-complaints-mechanism-to-manage-jointly-owned-properties/" target="_blank" rel="noopener">Dubai Land Department: complaints procedure against management companies</a></li>
+    <li><a class="ext" href="https://dlp.dubai.gov.ae/Legislation%20Reference/2019/Law%20No.%20(6)%20of%202019%20Concerning%20Ownership%20of%20Jointly%20Owned%20Real%20Property%20in%20the%20Emirate%20of%20Dubai.html" target="_blank" rel="noopener">Law No. 6 of 2019 on jointly owned property (Article 24: Owners Committee)</a></li>
+    <li><a class="ext" href="https://www.dm.gov.ae/contact/" target="_blank" rel="noopener">Dubai Municipality: contact and complaints</a></li>
+    <li><a class="ext" href="https://www.dewa.gov.ae/~/media/Files/Consultants%20and%20Contractors/Green%20Building/Greenbuilding_Eng.ashx" target="_blank" rel="noopener">Dubai Green Building Regulations (indoor design conditions, maintenance and re-commissioning duties)</a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="wrap">
+  Written by a City Walk owner from his own case, to help neighbours with the same problem. It is practical guidance, not legal or engineering advice. Check the details of your own situation before you send anything.
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  function dew(t,rh){if(!(rh>0)||isNaN(t))return NaN;var g=(17.27*t)/(237.7+t)+Math.log(rh/100);return 237.7*g/(17.27-g)}
+  function toast(m){var e=$('#toast');e.textContent=m;e.classList.add('show');clearTimeout(e._t);e._t=setTimeout(function(){e.classList.remove('show')},1800)}
+
+  /* calculator */
+  function calc(){
+    var t=parseFloat($('#cT').value),h=parseFloat($('#cH').value),w=$('#cW').value,d=dew(t,h),v=$('#cV');
+    if(isNaN(d)){$('#cDP').textContent='–';v.className='verdict';v.textContent='';return}
+    $('#cDP').textContent=d.toFixed(1)+' °C';
+    var lim=w==='fa'?[13,15]:[17,20],cls,msg;
+    if(d<=lim[0]){cls='g';msg=w==='fa'?'Good: this fresh air is dry enough.':'Good: the pipe should stay dry.'}
+    else if(d<=lim[1]){cls='y';msg=w==='fa'?'Borderline: worth reporting, especially if you see water.':'Marginal: close to the pipe surface, so expect drips on humid days.'}
+    else{cls='r';msg=w==='fa'?'Too humid: this is the problem. Put these numbers in your complaint.':'Condensing: the pipe is colder than this dewpoint, so it will drip.'}
+    v.className='verdict '+cls;v.textContent=msg;
+  }
+  ['#cT','#cH','#cW'].forEach(function(s){$(s).addEventListener('input',calc)});calc();
+
+  /* look-up table (shown in print) */
+  (function(){var temps=[20,22,24,26,28,30],rhs=[40,50,55,60,65,70,80],h='<table><tr><th>°C \\ %</th>';
+    rhs.forEach(function(r){h+='<th>'+r+'%</th>'});h+='</tr>';
+    temps.forEach(function(t){h+='<tr><th>'+t+' °C</th>';rhs.forEach(function(r){var d=dew(t,r);h+='<td>'+d.toFixed(1)+'</td>'});h+='</tr>'});
+    $('#dpTable').innerHTML=h+'</table>'})();
+
+  /* details -> letters */
+  var KEY='cw-guide-details', data={};
+  try{data=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){data={}}
+  var inputs=$$('.mydetails input');
+  inputs.forEach(function(i){if(data[i.dataset.k])i.value=data[i.dataset.k];i.addEventListener('input',update)});
+  function update(){
+    inputs.forEach(function(i){data[i.dataset.k]=i.value.trim()});
+    var t=parseFloat(data.t),h=parseFloat(data.rh),dpIn=$('.mydetails input[data-k="dp"]');
+    if(!isNaN(t)&&!isNaN(h)&&!dpIn.dataset.touched){var d=dew(t,h);if(!isNaN(d)){dpIn.value=d.toFixed(1);data.dp=dpIn.value}}
+    try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){}
+    $$('.f').forEach(function(s){
+      if(!s.dataset.ph)s.dataset.ph=s.textContent;
+      var v=data[s.dataset.f];
+      if(v){s.textContent=v;s.classList.add('filled')}else{s.textContent=s.dataset.ph;s.classList.remove('filled')}
+    });
+    count();
+  }
+  $('.mydetails input[data-k="dp"]').addEventListener('keydown',function(){this.dataset.touched='1'});
+  $('#clearDetails').addEventListener('click',function(){inputs.forEach(function(i){i.value=''});delete $('.mydetails input[data-k="dp"]').dataset.touched;update();toast('Details cleared')});
+
+  function count(){var n=$('#reraText').innerText.length,c=$('#reraChars');c.textContent=n+' / 2,000 characters';c.style.color=n>2000?'#b3261e':''}
+
+  /* copy + mailto */
+  function copyText(txt){
+    if(navigator.clipboard&&window.isSecureContext){return navigator.clipboard.writeText(txt)}
+    var ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove();return Promise.resolve();
+  }
+  $$('.letter').forEach(function(L){
+    var b=$('.copy',L),m=$('.mail',L);
+    if(b)b.addEventListener('click',function(){var s=$('.subj',L),txt=(s?'Subject: '+s.innerText+'\n\n':'')+$('.lb',L).innerText;copyText(txt).then(function(){toast('Copied. Paste it into your email.')})});
+    if(m)m.addEventListener('click',function(e){e.preventDefault();
+      var href='mailto:'+L.dataset.to+'?'+(L.dataset.cc?'cc='+encodeURIComponent(L.dataset.cc)+'&':'')+'subject='+encodeURIComponent($('.subj',L).innerText)+'&body='+encodeURIComponent($('.lb',L).innerText);
+      window.location.href=href});
+  });
+  update();
+})();
+</script>
+</body>
+</html>
